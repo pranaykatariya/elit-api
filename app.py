@@ -61,6 +61,7 @@ class Spam(Resource):
             sequences_matrix = sequence.pad_sequences(sequences,maxlen=max_len)
             
             model = RNN.RNN()
+            model._get_distribution_strategy = lambda: None
             model.summary()
             model.compile(loss='binary_crossentropy',optimizer=RMSprop(),metrics=['accuracy'])
             
