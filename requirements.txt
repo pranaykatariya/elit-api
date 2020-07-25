@@ -1,17 +1,10 @@
 Flask==1.1.2
 Flask-RESTful==0.3.8
 pandas==0.25.3
-tensorflow @ https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl
+tensorflow @ https://www.piwheels.org/simple/tensorflow/tensorflow-1.14.0-cp37-none-linux_armv7l.whl#sha256=d4b1c2eda7a46e00e5091c077958c1bc116fc2be6c5ecb870a613edac2a95e74
 keras==2.2.4
 tensorboard==2.1.0
 gunicorn==20.0.4
 matplotlib==3.1.1
 seaborn==0.9.0
 sklearn==0.0
- 
-
-
-
-
-
-
