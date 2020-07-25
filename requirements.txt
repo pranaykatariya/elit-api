@@ -1,6 +1,6 @@
-flask==1.1.2
-flask-restful==0.3.8
-pand==0.25.3
+Flask==1.1.2
+Flask-RESTful==0.3.8
+pandas==0.25.3
 keras==2.2.4
 tensorflow==1.15.0
 tensorboard==2.0.0
