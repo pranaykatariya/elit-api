@@ -8,6 +8,7 @@ Created on Sun Mar  3 15:58:47 2019
   
 from flask import Flask 
 from flask_restful import reqparse,Api,Resource 
+from flask_cors import CORS, cross_origin
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -26,6 +27,7 @@ import pickle
 import RNN
 
 class Spam(Resource):
+    @cross_origin()
     def get(self):
         try:
             file=open("model.pickle","rb")
@@ -83,6 +85,7 @@ class Spam(Resource):
 
 
 app = Flask(__name__)
+CORS(app)
 api = Api(app)
 api.add_resource(Spam, '/')
 
