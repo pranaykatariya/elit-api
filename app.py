@@ -6,7 +6,7 @@ Created on Sun Mar  3 15:58:47 2019
 @author: sneha 
 """
   
-from flask import Flask 
+from flask import Flask  
 from flask_restful import reqparse,Api,Resource 
 from flask_cors import CORS, cross_origin
 import pandas as pd
